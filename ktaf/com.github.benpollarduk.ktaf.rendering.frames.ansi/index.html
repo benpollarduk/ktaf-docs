@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.github.benpollarduk.ktaf.rendering.frames.ansi</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                            ktaf
+                    </a>
+            </div>
+            <div class="library-version">
+1.0.2            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":ktaf:dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="ktaf::com.github.benpollarduk.ktaf.rendering.frames.ansi////PointingToDeclaration//-1120807691">
+  <div class="breadcrumbs"><a href="../../index.html">ktaf</a><span class="delimiter">/</span><span class="current">com.github.benpollarduk.ktaf.rendering.frames.ansi</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-828886482%2FClasslikes%2F-1120807691" anchor-label="AnsiAboutFrameBuilder" id="-828886482%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-about-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>About</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-828886482%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-about-frame-builder/index.html">AnsiAboutFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">nameColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.GREEN<span class="token punctuation">, </span></span><span class="parameter ">descriptionColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">authorColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-about-frame-builder/index.html">AboutFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides a ANSI about frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiAboutFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="744918374%2FClasslikes%2F-1120807691" anchor-label="AnsiColor" id="744918374%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-color/index.html"><span>Ansi</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="744918374%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-ansi-color/index.html">AnsiColor</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Enumeration of ANSI color codes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="134393807%2FClasslikes%2F-1120807691" anchor-label="AnsiCompletionFrameBuilder" id="134393807%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-completion-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>Completion</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="134393807%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-completion-frame-builder/index.html">AnsiCompletionFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.GREEN<span class="token punctuation">, </span></span><span class="parameter ">descriptionColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-completion-frame-builder/index.html">CompletionFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides an ANSI completion frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiCompletionFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1475056008%2FClasslikes%2F-1120807691" anchor-label="AnsiConversationFrameBuilder" id="1475056008%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-conversation-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>Conversation</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1475056008%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-conversation-frame-builder/index.html">AnsiConversationFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.GREEN<span class="token punctuation">, </span></span><span class="parameter ">nonPlayerMessageColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.YELLOW<span class="token punctuation">, </span></span><span class="parameter ">playerMessageColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BLUE<span class="token punctuation">, </span></span><span class="parameter ">responseColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">inputColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-conversation-frame-builder/index.html">ConversationFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides an ANSI conversation frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiConversationFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="307548165%2FClasslikes%2F-1120807691" anchor-label="AnsiGameOverFrameBuilder" id="307548165%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-game-over-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>Game</span><wbr></wbr><span>Over</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="307548165%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-game-over-frame-builder/index.html">AnsiGameOverFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RED<span class="token punctuation">, </span></span><span class="parameter ">descriptionColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-game-over-frame-builder/index.html">GameOverFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides an ANSI game over frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiGameOverFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-850584763%2FClasslikes%2F-1120807691" anchor-label="AnsiGridStringBuilder" id="-850584763%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-grid-string-builder/index.html"><span>Ansi</span><wbr></wbr><span>Grid</span><wbr></wbr><span>String</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-850584763%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>leftBoundary<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'|'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>rightBoundary<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'|'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>horizontalDivider<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'-'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>lineTerminator<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>newline()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Provides a class for building strings as part of a grid.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="291230991%2FClasslikes%2F-1120807691" anchor-label="AnsiGridTextFrame" id="291230991%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-grid-text-frame/index.html"><span>Ansi</span><wbr></wbr><span>Grid</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Frame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="291230991%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-grid-text-frame/index.html">AnsiGridTextFrame</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">cursorLeft<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">cursorTop<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>acceptsInput<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BLACK</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-frame/index.html">Frame</a></div><div class="brief "><p class="paragraph">Provides an ANSI grid based <a href="../com.github.benpollarduk.ktaf.rendering.frames/-frame/index.html">Frame</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1985766794%2FClasslikes%2F-1120807691" anchor-label="AnsiHelpFrameBuilder" id="1985766794%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-help-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>Help</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1985766794%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-help-frame-builder/index.html">AnsiHelpFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">descriptionColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">commandColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.GREEN<span class="token punctuation">, </span></span><span class="parameter ">commandDescriptionColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.YELLOW</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-help-frame-builder/index.html">HelpFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides an ANSI help frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiHelpFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="890494118%2FClasslikes%2F-1120807691" anchor-label="AnsiRegionMapBuilder" id="890494118%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-region-map-builder/index.html"><span>Ansi</span><wbr></wbr><span>Region</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="890494118%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-region-map-builder/index.html">AnsiRegionMapBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lockedExit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'x'<span class="token punctuation">, </span></span><span class="parameter ">unlockedExit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>' '<span class="token punctuation">, </span></span><span class="parameter ">emptySpace<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>' '<span class="token punctuation">, </span></span><span class="parameter ">verticalBoundary<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'|'<span class="token punctuation">, </span></span><span class="parameter ">horizontalBoundary<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'-'<span class="token punctuation">, </span></span><span class="parameter ">lowerLevel<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'.'<span class="token punctuation">, </span></span><span class="parameter ">player<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'O'<span class="token punctuation">, </span></span><span class="parameter ">currentFloorIndicator<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'*'<span class="token punctuation">, </span></span><span class="parameter ">visitedBoundaryColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">unvisitedBoundaryColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">playerColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BLUE<span class="token punctuation">, </span></span><span class="parameter ">lockedExitColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RED<span class="token punctuation">, </span></span><span class="parameter ">lowerFloorColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">showLowerFloors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Provides an ANSI region map builder.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2106630355%2FClasslikes%2F-1120807691" anchor-label="AnsiRegionMapFrameBuilder" id="2106630355%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-region-map-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>Region</span><wbr></wbr><span>Map</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2106630355%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-region-map-frame-builder/index.html">AnsiRegionMapFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">regionMapBuilder<span class="token operator">: </span><a href="-ansi-region-map-builder/index.html">AnsiRegionMapBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-region-map-frame-builder/index.html">RegionMapFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides an ANSI region map frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiRegionMapFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-237759649%2FClasslikes%2F-1120807691" anchor-label="AnsiRoomMapBuilder" id="-237759649%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-room-map-builder/index.html"><span>Ansi</span><wbr></wbr><span>Room</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-237759649%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-room-map-builder/index.html">AnsiRoomMapBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lockedExit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'x'<span class="token punctuation">, </span></span><span class="parameter ">itemOrCharacterInRoom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'?'<span class="token punctuation">, </span></span><span class="parameter ">verticalBoundary<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'|'<span class="token punctuation">, </span></span><span class="parameter ">horizontalBoundary<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'-'<span class="token punctuation">, </span></span><span class="parameter ">verticalExitBorder<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'|'<span class="token punctuation">, </span></span><span class="parameter ">horizontalExitBorder<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'-'<span class="token punctuation">, </span></span><span class="parameter ">corner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'+'<span class="token punctuation">, </span></span><span class="parameter ">keyPadding<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">6</span><span class="token punctuation">, </span></span><span class="parameter ">boundaryColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">itemOrCharacterColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BLUE<span class="token punctuation">, </span></span><span class="parameter ">lockedExitColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RED<span class="token punctuation">, </span></span><span class="parameter ">visitedExitColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.YELLOW<span class="token punctuation">, </span></span><span class="parameter ">unvisitedExitColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.GREEN</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Provides an ANSI <a href="../com.github.benpollarduk.ktaf.assets.locations/-room/index.html">Room</a> map builder.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1179435151%2FClasslikes%2F-1120807691" anchor-label="AnsiSceneFrameBuilder" id="1179435151%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-scene-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>Scene</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1179435151%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-scene-frame-builder/index.html">AnsiSceneFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">roomMapBuilder<span class="token operator">: </span><a href="-ansi-room-map-builder/index.html">AnsiRoomMapBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">textColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">inputColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">commandsColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">displayMessagesInIsolation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">suppressMovementMessages<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-scene-frame-builder/index.html">SceneFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides an ANSI scene frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiSceneFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="573711939%2FClasslikes%2F-1120807691" anchor-label="AnsiTitleFrameBuilder" id="573711939%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-title-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>Title</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="573711939%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-title-frame-builder/index.html">AnsiTitleFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE<span class="token punctuation">, </span></span><span class="parameter ">descriptionColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.WHITE</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-title-frame-builder/index.html">TitleFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides an ANSI title frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiTitleFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1635594762%2FClasslikes%2F-1120807691" anchor-label="AnsiTransitionFrameBuilder" id="-1635594762%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ansi-transition-frame-builder/index.html"><span>Ansi</span><wbr></wbr><span>Transition</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1635594762%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ansi-transition-frame-builder/index.html">AnsiTransitionFrameBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ansiGridStringBuilder<span class="token operator">: </span><a href="-ansi-grid-string-builder/index.html">AnsiGridStringBuilder</a><span class="token punctuation">, </span></span><span class="parameter ">frameSize<span class="token operator">: </span><a href="../com.github.benpollarduk.ktaf.assets/-size/index.html">Size</a><span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.RESET<span class="token punctuation">, </span></span><span class="parameter ">borderColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.BRIGHT_BLACK<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.GREEN<span class="token punctuation">, </span></span><span class="parameter ">messageColor<span class="token operator">: </span><a href="-ansi-color/index.html">AnsiColor</a><span class="token operator"> = </span>AnsiColor.YELLOW</span></span><span class="token punctuation">)</span> : <a href="../com.github.benpollarduk.ktaf.rendering.frames/-transition-frame-builder/index.html">TransitionFrameBuilder</a></div><div class="brief "><p class="paragraph">Provides an ANSI title frame builder that builds in to the specified <span data-unresolved-link="com.github.benpollarduk.ktaf.rendering.frames.ansi/AnsiTransitionFrameBuilder/ansiGridStringBuilder/#/PointingToDeclaration/">ansiGridStringBuilder</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Room</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            ktaf
+                    </a>
+            </div>
+            <div class="library-version">
+1.0.2            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":ktaf:dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="ktaf::com.github.benpollarduk.ktaf.assets.locations/Room///PointingToDeclaration//-1120807691">
+  <div class="breadcrumbs"><a href="../../../index.html">ktaf</a><span class="delimiter">/</span><a href="../index.html">com.github.benpollarduk.ktaf.assets.locations</a><span class="delimiter">/</span><span class="current">Room</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Room</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Room</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>identifier<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-identifier/index.html">Identifier</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>description<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-description/index.html">Description</a><span class="token punctuation">, </span></span><span class="parameter ">exits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-exit/index.html">Exit</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">items<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span> : <a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/index.html">ExaminableObject</a>, <a href="../../com.github.benpollarduk.ktaf.assets.interaction/-interaction-target/index.html">InteractionTarget</a></div><p class="paragraph">A room with a specified <a href="identifier.html">identifier</a> and a <a href="description.html">description</a>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-941594175%2FConstructors%2F-1120807691" anchor-label="Room" id="-941594175%2FConstructors%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-room.html"><span><span>Room</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-941594175%2FConstructors%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">identifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">exits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-exit/index.html">Exit</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">items<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A room with a specified <span data-unresolved-link="com.github.benpollarduk.ktaf.assets.locations/Room/&amp;lt;init&amp;gt;/#kotlin.String#kotlin.String#kotlin.collections.List[com.github.benpollarduk.ktaf.assets.locations.Exit]#kotlin.collections.List[com.github.benpollarduk.ktaf.assets.Item]/PointingToCallableParameters(0)/">identifier</span> and a <span data-unresolved-link="com.github.benpollarduk.ktaf.assets.locations/Room/&amp;lt;init&amp;gt;/#kotlin.String#kotlin.String#kotlin.collections.List[com.github.benpollarduk.ktaf.assets.locations.Exit]#kotlin.collections.List[com.github.benpollarduk.ktaf.assets.Item]/PointingToCallableParameters(1)/">description</span>.</p></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">identifier<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-identifier/index.html">Identifier</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-description/index.html">Description</a><span class="token punctuation">, </span></span><span class="parameter ">exits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-exit/index.html">Exit</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">items<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-24557685%2FClasslikes%2F-1120807691" anchor-label="Companion" id="-24557685%2FClasslikes%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-24557685%2FClasslikes%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="126952172%2FProperties%2F-1120807691" anchor-label="characters" id="126952172%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="characters.html"><span><span>characters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="126952172%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="characters.html">characters</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.github.benpollarduk.ktaf.assets.characters/-non-playable-character/index.html">NonPlayableCharacter</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get the all characters in this <a href="index.html">Room</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1592782368%2FProperties%2F-1120807691" anchor-label="commands" id="1592782368%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/commands.html"><span><span>commands</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1592782368%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/commands.html">commands</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.github.benpollarduk.ktaf.commands/-custom-command/index.html">CustomCommand</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">A list of <a href="../../com.github.benpollarduk.ktaf.commands/-custom-command/index.html">CustomCommand</a> that this <a href="../../com.github.benpollarduk.ktaf.assets/-examinable/index.html">Examinable</a> provides.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="237576%2FProperties%2F-1120807691" anchor-label="description" id="237576%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="description.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="237576%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="description.html">description</a><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-description/index.html">Description</a></div><div class="brief "><p class="paragraph">A <a href="../../com.github.benpollarduk.ktaf.assets/-description/index.html">Description</a> that describes this object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-132479517%2FProperties%2F-1120807691" anchor-label="enteredFrom" id="-132479517%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="entered-from.html"><span>entered</span><wbr></wbr><span><span>From</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-132479517%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="entered-from.html">enteredFrom</a><span class="token operator">: </span><a href="../-direction/index.html">Direction</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get the <a href="../-direction/index.html">Direction</a> this room was entered from.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-868222687%2FProperties%2F-1120807691" anchor-label="examination" id="-868222687%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/examination.html"><span><span>examination</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-868222687%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/examination.html">examination</a><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-examination/index.html">Examination</a></div><div class="brief "><p class="paragraph">Provides a callback for handling examination of this object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-694446001%2FProperties%2F-1120807691" anchor-label="exits" id="-694446001%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exits.html"><span><span>exits</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-694446001%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="exits.html">exits</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-exit/index.html">Exit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get the all exits.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="787630002%2FProperties%2F-1120807691" anchor-label="hasBeenVisited" id="787630002%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-been-visited.html"><span>has</span><wbr></wbr><span>Been</span><wbr></wbr><span><span>Visited</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="787630002%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="has-been-visited.html">hasBeenVisited</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> has been visited.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2047202701%2FProperties%2F-1120807691" anchor-label="identifier" id="2047202701%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="identifier.html"><span><span>identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2047202701%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="identifier.html">identifier</a><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-identifier/index.html">Identifier</a></div><div class="brief "><p class="paragraph">An <a href="../../com.github.benpollarduk.ktaf.assets/-identifier/index.html">Identifier</a> that can be used to identify this object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1805826738%2FProperties%2F-1120807691" anchor-label="interaction" id="1805826738%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interaction.html"><span><span>interaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1805826738%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="interaction.html">interaction</a><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets.interaction/-interaction/index.html">Interaction</a></div><div class="brief "><p class="paragraph">Specifies how this <a href="index.html">Room</a> interacts with various <a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="672383499%2FProperties%2F-1120807691" anchor-label="isPlayerVisible" id="672383499%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/is-player-visible.html"><span>is</span><wbr></wbr><span>Player</span><wbr></wbr><span><span>Visible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="672383499%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/is-player-visible.html">isPlayerVisible</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns true if visible to the player, else false.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-544005628%2FProperties%2F-1120807691" anchor-label="items" id="-544005628%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="items.html"><span><span>items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-544005628%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="items.html">items</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get the all items in this <a href="index.html">Room</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1547146990%2FProperties%2F-1120807691" anchor-label="unlockedExits" id="-1547146990%2FProperties%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unlocked-exits.html"><span>unlocked</span><wbr></wbr><span><span>Exits</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1547146990%2FProperties%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="unlocked-exits.html">unlockedExits</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-exit/index.html">Exit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get the all unlocked exits.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-2081138882%2FFunctions%2F-1120807691" anchor-label="addCharacter" id="-2081138882%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-character.html"><span>add</span><wbr></wbr><span><span>Character</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2081138882%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-character.html"><span class="token function">addCharacter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">character<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets.characters/-non-playable-character/index.html">NonPlayableCharacter</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add a <a href="add-character.html">character</a> to this <a href="index.html">Room</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="310532507%2FFunctions%2F-1120807691" anchor-label="addExit" id="310532507%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-exit.html"><span>add</span><wbr></wbr><span><span>Exit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="310532507%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-exit.html"><span class="token function">addExit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">exit<span class="token operator">: </span><a href="../-exit/index.html">Exit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add an <a href="add-exit.html">exit</a> to this <a href="index.html">Room</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="771507521%2FFunctions%2F-1120807691" anchor-label="addItem" id="771507521%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-item.html"><span>add</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="771507521%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-item.html"><span class="token function">addItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add an <a href="add-item.html">item</a> to this <a href="index.html">Room</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="230898860%2FFunctions%2F-1120807691" anchor-label="canMove" id="230898860%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-move.html"><span>can</span><wbr></wbr><span><span>Move</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230898860%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="can-move.html"><span class="token function">canMove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">direction<span class="token operator">: </span><a href="../-direction/index.html">Direction</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Determine if a move in this <a href="index.html">Room</a> is possible in a specified <a href="can-move.html">direction</a>. Returns true if the move is possible, else false.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1288578356%2FFunctions%2F-1120807691" anchor-label="containsCharacter" id="1288578356%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contains-character.html"><span>contains</span><wbr></wbr><span><span>Character</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1288578356%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="contains-character.html"><span class="token function">containsCharacter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">character<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets.characters/-non-playable-character/index.html">NonPlayableCharacter</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> contains a specified <a href="contains-character.html">character</a>.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="contains-character.html"><span class="token function">containsCharacter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">character<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleCharacters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> contains a <a href="contains-character.html">character</a>. If <a href="contains-character.html">includeInvisibleCharacters</a> is true then characters that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2027374368%2FFunctions%2F-1120807691" anchor-label="containsInteractionTarget" id="-2027374368%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contains-interaction-target.html"><span>contains</span><wbr></wbr><span>Interaction</span><wbr></wbr><span><span>Target</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2027374368%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="contains-interaction-target.html"><span class="token function">containsInteractionTarget</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">target<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleExits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> contains an <a href="../../com.github.benpollarduk.ktaf.assets.interaction/-interaction-target/index.html">InteractionTarget</a> specified by <a href="contains-interaction-target.html">target</a>. If <a href="contains-interaction-target.html">includeInvisibleExits</a> is true then targets that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-29472691%2FFunctions%2F-1120807691" anchor-label="containsItem" id="-29472691%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contains-item.html"><span>contains</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-29472691%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="contains-item.html"><span class="token function">containsItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> contains a specified <a href="contains-item.html">item</a>.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="contains-item.html"><span class="token function">containsItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleItems<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> contains an <a href="contains-item.html">item</a>. If <a href="contains-item.html">includeInvisibleItems</a> is true then items that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2109418557%2FFunctions%2F-1120807691" anchor-label="examine" id="-2109418557%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="examine.html"><span><span>examine</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2109418557%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="examine.html"><span class="token function">examine</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-examination-result/index.html">ExaminationResult</a></div><div class="brief "><p class="paragraph">Examine this object to obtain an <a href="../../com.github.benpollarduk.ktaf.assets/-examination-result/index.html">ExaminationResult</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-138811564%2FFunctions%2F-1120807691" anchor-label="findCharacter" id="-138811564%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-character.html"><span>find</span><wbr></wbr><span><span>Character</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-138811564%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="find-character.html"><span class="token function">findCharacter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">character<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleCharacters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets.characters/-non-playable-character/index.html">NonPlayableCharacter</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Find a <a href="../../com.github.benpollarduk.ktaf.assets.characters/-character/index.html">Character</a> in this <a href="index.html">Room</a>, specified by <a href="find-character.html">character</a>. If <a href="find-character.html">includeInvisibleCharacters</a> is true then items that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1282100916%2FFunctions%2F-1120807691" anchor-label="findExit" id="1282100916%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-exit.html"><span>find</span><wbr></wbr><span><span>Exit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1282100916%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="find-exit.html"><span class="token function">findExit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">direction<span class="token operator">: </span><a href="../-direction/index.html">Direction</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleExits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-exit/index.html">Exit</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Find the <a href="../-exit/index.html">Exit</a> in the specified <a href="find-exit.html">direction</a>. If <a href="find-exit.html">includeInvisibleExits</a> is set true then exits which are not player visible will be included. If an exits cannot be found then null is returned.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1095428218%2FFunctions%2F-1120807691" anchor-label="findInteractionTarget" id="1095428218%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-interaction-target.html"><span>find</span><wbr></wbr><span>Interaction</span><wbr></wbr><span><span>Target</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1095428218%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="find-interaction-target.html"><span class="token function">findInteractionTarget</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">target<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleTargets<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets.interaction/-interaction-target/index.html">InteractionTarget</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Find an <a href="../../com.github.benpollarduk.ktaf.assets.interaction/-interaction-target/index.html">InteractionTarget</a> in this <a href="index.html">Room</a>, specified by <a href="find-interaction-target.html">target</a>. If <a href="find-interaction-target.html">includeInvisibleTargets</a> is true then targets that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="454921322%2FFunctions%2F-1120807691" anchor-label="findItem" id="454921322%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-item.html"><span>find</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="454921322%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="find-item.html"><span class="token function">findItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleItems<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Find an <a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a> in this <a href="index.html">Room</a>, specified by <a href="find-item.html">item</a>. If <a href="find-item.html">includeInvisibleItems</a> is true then items that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1574561473%2FFunctions%2F-1120807691" anchor-label="get" id="1574561473%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1574561473%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">direction<span class="token operator">: </span><a href="../-direction/index.html">Direction</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-exit/index.html">Exit</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get the <a href="../-exit/index.html">Exit</a> at the specified <a href="get.html">direction</a>. If no <a href="../-exit/index.html">Exit</a> exists in the specified <a href="get.html">direction</a> then null is returned.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1039557473%2FFunctions%2F-1120807691" anchor-label="hasExit" id="1039557473%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-exit.html"><span>has</span><wbr></wbr><span><span>Exit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1039557473%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="has-exit.html"><span class="token function">hasExit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">direction<span class="token operator">: </span><a href="../-direction/index.html">Direction</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleExits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> has an <a href="../-exit/index.html">Exit</a> in a specified <a href="has-exit.html">direction</a>. If <a href="has-exit.html">includeInvisibleExits</a> is true then exits that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1892467181%2FFunctions%2F-1120807691" anchor-label="hasLockedExitInDirection" id="-1892467181%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-locked-exit-in-direction.html"><span>has</span><wbr></wbr><span>Locked</span><wbr></wbr><span>Exit</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Direction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1892467181%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="has-locked-exit-in-direction.html"><span class="token function">hasLockedExitInDirection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">direction<span class="token operator">: </span><a href="../-direction/index.html">Direction</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleExits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> has a locked <a href="../-exit/index.html">Exit</a> in a specified <a href="has-locked-exit-in-direction.html">direction</a>. If <a href="has-locked-exit-in-direction.html">includeInvisibleExits</a> is true then exits that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2041446036%2FFunctions%2F-1120807691" anchor-label="hasUnlockedExitInDirection" id="-2041446036%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-unlocked-exit-in-direction.html"><span>has</span><wbr></wbr><span>Unlocked</span><wbr></wbr><span>Exit</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Direction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2041446036%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="has-unlocked-exit-in-direction.html"><span class="token function">hasUnlockedExitInDirection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">direction<span class="token operator">: </span><a href="../-direction/index.html">Direction</a><span class="token punctuation">, </span></span><span class="parameter ">includeInvisibleExits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get if this <a href="index.html">Room</a> has an unlocked <a href="../-exit/index.html">Exit</a> in a specified <a href="has-unlocked-exit-in-direction.html">direction</a>. If <a href="has-unlocked-exit-in-direction.html">includeInvisibleExits</a> is true then exits that aren't visible to the player are included.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-686290703%2FFunctions%2F-1120807691" anchor-label="interact" id="-686290703%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interact.html"><span><span>interact</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-686290703%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="interact.html"><span class="token function">interact</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets.interaction/-interaction-result/index.html">InteractionResult</a></div><div class="brief "><p class="paragraph">Interact with the specified <a href="interact.html">item</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="956050501%2FFunctions%2F-1120807691" anchor-label="movedInto" id="956050501%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="moved-into.html"><span>moved</span><wbr></wbr><span><span>Into</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="956050501%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="moved-into.html"><span class="token function">movedInto</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">from<span class="token operator">: </span><a href="../-direction/index.html">Direction</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Move in to this <a href="index.html">Room</a> form a specified <a href="../-direction/index.html">Direction</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="249603405%2FFunctions%2F-1120807691" anchor-label="removeCharacter" id="249603405%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-character.html"><span>remove</span><wbr></wbr><span><span>Character</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="249603405%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-character.html"><span class="token function">removeCharacter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">character<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets.characters/-non-playable-character/index.html">NonPlayableCharacter</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Remove a <a href="remove-character.html">character</a> from this <a href="index.html">Room</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1971020566%2FFunctions%2F-1120807691" anchor-label="removeExit" id="-1971020566%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-exit.html"><span>remove</span><wbr></wbr><span><span>Exit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1971020566%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-exit.html"><span class="token function">removeExit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">exit<span class="token operator">: </span><a href="../-exit/index.html">Exit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Remove an <a href="remove-exit.html">exit</a> from this <a href="index.html">Room</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-731151470%2FFunctions%2F-1120807691" anchor-label="removeInteractionTarget" id="-731151470%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-interaction-target.html"><span>remove</span><wbr></wbr><span>Interaction</span><wbr></wbr><span><span>Target</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-731151470%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-interaction-target.html"><span class="token function">removeInteractionTarget</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">target<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets.interaction/-interaction-target/index.html">InteractionTarget</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Remove a <a href="remove-interaction-target.html">target</a> from this <a href="index.html">Room</a>. If the <a href="remove-interaction-target.html">target</a> exists in the <a href="index.html">Room</a> true is returned else false.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1125347504%2FFunctions%2F-1120807691" anchor-label="removeItem" id="-1125347504%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-item.html"><span>remove</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1125347504%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-item.html"><span class="token function">removeItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-item/index.html">Item</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Remove an <a href="remove-item.html">item</a> from this <a href="index.html">Room</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="148560763%2FFunctions%2F-1120807691" anchor-label="specifyConditionalDescription" id="148560763%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="specify-conditional-description.html"><span>specify</span><wbr></wbr><span>Conditional</span><wbr></wbr><span><span>Description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="148560763%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="specify-conditional-description.html"><span class="token function">specifyConditionalDescription</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">description<span class="token operator">: </span><a href="../../com.github.benpollarduk.ktaf.assets/-conditional-description/index.html">ConditionalDescription</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Specify a <a href="../../com.github.benpollarduk.ktaf.assets/-conditional-description/index.html">ConditionalDescription</a> for this <a href="index.html">Room</a> with <a href="specify-conditional-description.html">description</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-796160324%2FFunctions%2F-1120807691" anchor-label="toString" id="-796160324%2FFunctions%2F-1120807691" data-filterable-set=":ktaf:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":ktaf:dokkaHtml/main" data-filterable-set=":ktaf:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-796160324%2FFunctions%2F-1120807691"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktaf:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../../com.github.benpollarduk.ktaf.assets/-examinable-object/to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
