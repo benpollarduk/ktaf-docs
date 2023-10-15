@@ -292,9 +292,6 @@ $dokka.location:com.github.benpollarduk.ktaf.extensions//toIdentifier/kotlin.Str
 $dokka.location:com.github.benpollarduk.ktaf.extensions//toSentenceCase/kotlin.String#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.extensions/to-sentence-case.html
 $dokka.location:com.github.benpollarduk.ktaf.extensions//toSpeech/kotlin.String#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.extensions/to-speech.html
 $dokka.location:com.github.benpollarduk.ktaf.extensions//tryParseInt/kotlin.String#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.extensions/try-parse-int.html
-$dokka.location:com.github.benpollarduk.ktaf.helpers////PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.helpers/index.html
-$dokka.location:com.github.benpollarduk.ktaf.helpers//newline/#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.helpers/newline.html
-$dokka.location:com.github.benpollarduk.ktaf.helpers//newline/#kotlin.String/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.helpers/newline.html
 $dokka.location:com.github.benpollarduk.ktaf.interpretation////PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.interpretation/index.html
 $dokka.location:com.github.benpollarduk.ktaf.interpretation/CharacterCommandInterpreter.Companion///PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.interpretation/-character-command-interpreter/-companion/index.html
 $dokka.location:com.github.benpollarduk.ktaf.interpretation/CharacterCommandInterpreter.Companion/TALK/#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.interpretation/-character-command-interpreter/-companion/-t-a-l-k.html
@@ -738,7 +735,6 @@ com.github.benpollarduk.ktaf.assets.locations
 com.github.benpollarduk.ktaf.commands
 com.github.benpollarduk.ktaf.conversations
 com.github.benpollarduk.ktaf.extensions
-com.github.benpollarduk.ktaf.helpers
 com.github.benpollarduk.ktaf.interpretation
 com.github.benpollarduk.ktaf.io
 com.github.benpollarduk.ktaf.io.configurations
