@@ -74,8 +74,10 @@ $dokka.location:com.github.benpollarduk.ktaf.assets.locations/Direction/inverse/
 $dokka.location:com.github.benpollarduk.ktaf.assets.locations/Direction/valueOf/#kotlin.String/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-direction/value-of.html
 $dokka.location:com.github.benpollarduk.ktaf.assets.locations/Direction/values/#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-direction/values.html
 $dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit///PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/index.html
-$dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit/Exit/#com.github.benpollarduk.ktaf.assets.locations.Direction#kotlin.Boolean#com.github.benpollarduk.ktaf.assets.Description?/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/-exit.html
+$dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit/Exit/#com.github.benpollarduk.ktaf.assets.locations.Direction#kotlin.Boolean#com.github.benpollarduk.ktaf.assets.Identifier?#com.github.benpollarduk.ktaf.assets.Description?/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/-exit.html
 $dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit/direction/#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/direction.html
+$dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit/interact/#com.github.benpollarduk.ktaf.assets.Item/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/interact.html
+$dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit/interaction/#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/interaction.html
 $dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit/isLocked/#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/is-locked.html
 $dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit/lock/#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/lock.html
 $dokka.location:com.github.benpollarduk.ktaf.assets.locations/Exit/unlock/#/PointingToDeclaration/ktaf/com.github.benpollarduk.ktaf.assets.locations/-exit/unlock.html
