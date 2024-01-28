@@ -20,7 +20,7 @@
     
     
       
-        <title>Room - ktaf</title>
+        <title>Room - Ktaf</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="ktaf" class="md-header__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-header__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ktaf
+            Ktaf
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ktaf" class="md-nav__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-nav__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    ktaf
+    Ktaf
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -598,6 +598,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Api documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -669,39 +689,41 @@
 │   ├── Room
 │   ├── Room
 </code></pre>
-<p>A Room can contain up to six Exits, one for each of the directions <strong>north</strong>, <strong>east</strong>, <strong>south</strong>, <strong>west</strong>, <strong>up</strong> and <strong>down</strong>.</p>
+<p>A Room can contain up to six Exits, one for each of the directions <strong>north</strong>, <strong>east</strong>, <strong>south</strong>, <strong>west</strong>, <strong>up</strong> and 
+<strong>down</strong>.</p>
 <h2 id="use">Use</h2>
 <p>A Region can be simply instantiated with a name and description.</p>
-<pre><code class="language-csharp">var room = new Room(&quot;Name&quot;, &quot;Description.&quot;);
+<pre><code class="language-kotlin">val room = Room(&quot;Name&quot;, &quot;Description.&quot;)
 </code></pre>
-<p>Exits can be added to the Room with the <strong>AddExit</strong> method.</p>
-<pre><code class="language-csharp">room.AddExit(new Exit(Direction.East));
+<p>Exits can be added to the Room with the <strong>addExit</strong> function.</p>
+<pre><code class="language-kotlin">room.addExit(Exit(Direction.EAST));
 </code></pre>
-<p>Exits can be removed from a Room with the <strong>RemoveExit</strong> method.</p>
-<pre><code class="language-csharp">region.RemoveExit(exit);
+<p>Exits can be removed from a Room with the <strong>removeExit</strong> function.</p>
+<pre><code class="language-kotlin">region.removeExit(exit);
 </code></pre>
-<p>Items can be added to the Room with the <strong>AddItem</strong> method.</p>
-<pre><code class="language-csharp">room.AddItem(new Item(&quot;Name&quot;, &quot;Description.&quot;));
+<p>Items can be added to the Room with the <strong>addItem</strong> function.</p>
+<pre><code class="language-kotlin">room.addItem(Item(&quot;Name&quot;, &quot;Description.&quot;))
 </code></pre>
-<p>Items can be removed from a Room with the <strong>RemoveItem</strong> method.</p>
-<pre><code class="language-csharp">region.RemoveItem(item);
+<p>Items can be removed from a Room with the <strong>removeItem</strong> function.</p>
+<pre><code class="language-kotlin">region.removeItem(item)
 </code></pre>
-<p>Characters can be added to the Room with the <strong>AddCharacter</strong> method.</p>
-<pre><code class="language-csharp">room.AddCharacter(new Character(&quot;Name&quot;, &quot;Description.&quot;));
+<p>Characters can be added to the Room with the <strong>addCharacter</strong> function.</p>
+<pre><code class="language-kotlin">room.addCharacter(NonPlayableCharacter(&quot;Name&quot;, &quot;Description.&quot;))
 </code></pre>
-<p>Characters can be removed from a Room with the <strong>RemoveCharacter</strong> method.</p>
-<pre><code class="language-csharp">region.RemoveCharacter(character);
+<p>Characters can be removed from a Room with the <strong>removeCharacter</strong> function.</p>
+<pre><code class="language-kotlin">region.removeCharacter(character)
 </code></pre>
 <p>Rooms can contain custom commands that allow the user to directly interact with the Room.</p>
-<pre><code class="language-csharp">room.Commands =
-[
-    new CustomCommand(new CommandHelp(&quot;Pull lever&quot;, &quot;Pull the lever.&quot;), true, (game, args) =&gt;
-    {
-        room.FindExit(Direction.East, true, out var exit);
-        exit.Unlock();
-        return new Reaction(ReactionResult.OK, &quot;The exit was unlocked.&quot;);
-    })
-];
+<pre><code class="language-kotlin">room.commands = listOf(
+    CustomCommand(
+        CommandHelp(&quot;Pull lever&quot;, &quot;Pull the lever.&quot;),
+        true
+    ) { game, args -&gt;
+        val exit = room.findExit(Direction.EAST, true)
+        exit.unlock()
+        Reaction(ReactionResult.OK, &quot;The exit was unlocked.&quot;);
+    }
+)
 </code></pre>
 
 

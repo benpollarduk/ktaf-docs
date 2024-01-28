@@ -20,7 +20,7 @@
     
     
       
-        <title>Conditional Descriptions - ktaf</title>
+        <title>Conditional Descriptions - Ktaf</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="ktaf" class="md-header__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-header__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ktaf
+            Ktaf
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ktaf" class="md-nav__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-nav__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    ktaf
+    Ktaf
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -587,6 +587,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Api documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -639,32 +659,34 @@
 
 <h1 id="conditional-descriptions">Conditional Descriptions</h1>
 <h2 id="overview">Overview</h2>
-<p>Normally assets are assigned a <strong>Description</strong> during the constructor. This is what is returned when the asset is examined.</p>
+<p>Normally assets are assigned a <strong>Description</strong> during the constructor. This is what is returned when the asset is 
+examined.</p>
 <p>Descriptions are usually specified as a string.</p>
-<pre><code class="language-csharp">var item = new Item(&quot;The items name&quot;, &quot;The items description.&quot;);
+<pre><code class="language-kotlin">val item = Item(&quot;The items name&quot;, &quot;The items description.&quot;)
 </code></pre>
 <p>They can also be specified as a <strong>Description</strong>.</p>
-<pre><code class="language-csharp">var item = new Item(new Identifier(&quot;The items name&quot;), new Description(&quot;The items description.&quot;));
+<pre><code class="language-kotlin">val item = Item(Identifier(&quot;The items name&quot;), Description(&quot;The items description.&quot;))
 </code></pre>
-<p>However, sometimes it may be desirable to have a conditional description that can change based on the state of the asset.</p>
-<p>Conditional descriptions can be specified with <strong>ConditionalDescription</strong> and contain a lambda which determines which one of two strings are returned when the asset is examined.</p>
-<pre><code class="language-csharp">// the player, just for demo purposes
-var player = new PlayableCharacter(&quot;Ben&quot;, &quot;A man.&quot;);
+<p>However, sometimes it may be desirable to have a conditional description that can change based on the state of the 
+asset.</p>
+<p>Conditional descriptions can be specified with <strong>ConditionalDescription</strong> and contain a lambda which determines which 
+one of two strings are returned when the asset is examined.</p>
+<pre><code class="language-kotlin"> // the player, just for demo purposes
+val player = PlayableCharacter(&quot;Ben&quot;, &quot;A man.&quot;)
 
 // the description to use when the condition is true
-var trueString = &quot;A gleaming sword, owned by Ben.&quot;;
+val trueString = &quot;A gleaming sword, owned by Ben.&quot;
 
 // the string to use when the condition is false
-var falseString = &quot;A gleaming sword, without an owner.&quot;;
-
-// a lambda that determines which string is returned
-Condition condition = () =&gt; player.FindItem(&quot;Sword&quot;, out _);
+val falseString = &quot;A gleaming sword, without an owner.&quot;
 
 // the conditional description itself
-var conditionalDescrption = new ConditionalDescription(trueString, falseString, condition);
+val conditionalDescription = ConditionalDescription(trueString, falseString) {
+    player.findItem(&quot;Sword&quot;) != null
+}
 
 // create the item with the conditional description
-var sword = new Item(new Identifier(&quot;Sword&quot;), conditionalDescrption);
+val sword = Item(Identifier(&quot;Sword&quot;), conditionalDescription)
 </code></pre>
 
 

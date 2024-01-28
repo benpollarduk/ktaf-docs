@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../getting-started/">
+        <link rel="prev" href="../end-conditions/">
       
-      
-        <link rel="next" href="../region/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Overworld - Ktaf</title>
+        <title>Api documentation - Ktaf</title>
       
     
     
@@ -62,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overworld" class="md-skip">
+        <a href="#api-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overworld
+              Api documentation
             
           </span>
         </div>
@@ -228,21 +226,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -256,7 +252,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Environments
@@ -267,30 +263,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Overworld
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../overworld/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -299,53 +275,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overworldmaker" class="md-nav__link">
-    <span class="md-ellipsis">
-      OverworldMaker
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -611,10 +540,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../api-documentation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -623,6 +561,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -647,41 +586,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overworldmaker" class="md-nav__link">
-    <span class="md-ellipsis">
-      OverworldMaker
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -695,40 +599,8 @@
                   
 
 
-<h1 id="overworld">Overworld</h1>
-<h2 id="overview">Overview</h2>
-<p>An Overworld is the top level location in a game. A game can only contain a single Overworld. An Overworld can contain 
-multiple Regions.</p>
-<pre><code>Overworld
-├── Region
-│   ├── Room
-│   ├── Room
-│   ├── Room
-├── Region
-│   ├── Room
-│   ├── Room
-</code></pre>
-<h2 id="use">Use</h2>
-<p>An Overworld can be simply instantiated with a name and description.</p>
-<pre><code class="language-kotlin">val overworld = Overworld(&quot;Name&quot;, &quot;Description.&quot;)
-</code></pre>
-<p>Regions can be added to the Overworld with the <strong>addRegion</strong> function.</p>
-<pre><code class="language-kotlin">overworld.addRegion(region)
-</code></pre>
-<p>Regions can be removed from an Overworld with the <strong>removeRegion</strong> function.</p>
-<pre><code class="language-kotlin">overworld.removeRegion(region)
-</code></pre>
-<p>The Overworld can be traversed with the <strong>move</strong> function.</p>
-<pre><code class="language-kotlin">overworld.move(region)
-</code></pre>
-<h2 id="overworldmaker">OverworldMaker</h2>
-<p>The OverworldMaker simplifies the creation of the Overworld, when used in conjunction with RegionMakers.</p>
-<pre><code class="language-kotlin">val overworldMaker = OverworldMaker(&quot;Name&quot;, &quot;Description.&quot;, regionMakers)
-</code></pre>
-<p>However, the main benefit of using an OverworldMaker is that it allows multiple instances of an Overworld to be created 
-from a single definition of an Overworld.</p>
-<pre><code class="language-kotlin">val overworld = overworldMaker.make()
-</code></pre>
+<h1 id="api-documentation">Api Documentation</h1>
+<p>Please visit <a href="https://benpollarduk.github.io/ktaf-api-docs/">https://benpollarduk.github.io/ktaf-api-docs/</a> to view the Api documentation for Ktaf.</p>
 
 
 

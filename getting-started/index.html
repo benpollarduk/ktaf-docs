@@ -20,7 +20,7 @@
     
     
       
-        <title>Getting Started - ktaf</title>
+        <title>Getting Started - Ktaf</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="ktaf" class="md-header__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-header__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ktaf
+            Ktaf
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ktaf" class="md-nav__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-nav__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    ktaf
+    Ktaf
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -257,9 +257,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-the-nuget-package-to-your-project" class="md-nav__link">
+  <a href="#adding-the-package-to-your-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding the NuGet package to your project
+      Adding the package to your project
     </span>
   </a>
   
@@ -665,6 +665,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Api documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -692,9 +712,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-the-nuget-package-to-your-project" class="md-nav__link">
+  <a href="#adding-the-package-to-your-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding the NuGet package to your project
+      Adding the package to your project
     </span>
   </a>
   
@@ -794,187 +814,291 @@
 
 
 <h1 id="getting-started">Getting Started</h1>
-<h2 id="adding-the-nuget-package-to-your-project">Adding the NuGet package to your project</h2>
-<p>You need to pull BP.AdventureFramework into your project. The easiest way to do this is to add the NuGet package. The latest package and installation instructions are available <a href="https://github.com/benpollarduk/BP.AdventureFramework/pkgs/nuget/BP.AdventureFramework">here</a>.</p>
+<h2 id="adding-the-package-to-your-project">Adding the package to your project</h2>
+<p>You need to pull Ktaf into your project. The easiest way to do this is to add the package. The latest package and 
+installation instructions are available <a href="https://github.com/benpollarduk/ktaf/packages/">here</a>.</p>
 <h2 id="first-game">First Game</h2>
 <p>Once the package has been installed it's time to jump in and start building your first game.</p>
 <h3 id="setup">Setup</h3>
-<p>To start with create a new Console application. Regardless of target framework, it should look something like this:</p>
-<pre><code class="language-csharp">namespace BP.AdventureFramework.GettingStarted
-{
-    internal class Program
-    {
-        private static void Main(string[] args)
-        {
+<p>To start with create a new Console application. It should look something like this:</p>
+<pre><code class="language-kotlin">package com.github.benpollarduk.ktaf.gettingstarted
 
-        }
+object Main {
+    @JvmStatic
+    fun main(args: Array&lt;String&gt;) {
+
     }
 }
 </code></pre>
 <h3 id="adding-a-playablecharacter">Adding a PlayableCharacter</h3>
 <p>Every game requires a character to play as, lets add that next:</p>
-<pre><code class="language-csharp">private static PlayableCharacter CreatePlayer()
-{
-    return new PlayableCharacter(&quot;Dave&quot;, &quot;A young boy on a quest to find the meaning of life.&quot;);
+<pre><code class="language-kotlin">private fun createPlayer(): PlayableCharacter {
+    return PlayableCharacter(&quot;Dave&quot;, &quot;A young boy on a quest to find the meaning of life.&quot;)
 }
 </code></pre>
-<p>In this example whenever <strong>CreatePlayer</strong> is called a new <strong>PlayableCharacter</strong> will be created. The character is called "Dave" and has a description that describes him as "A young boy on a quest to find the meaning of life.".</p>
+<p>In this example whenever <strong>createPlayer</strong> is called a new <strong>PlayableCharacter</strong> will be created. The character is 
+called "Dave" and has a description that describes him as "A young boy on a quest to find the meaning of life.".</p>
 <h3 id="creating-the-game-world">Creating the game world</h3>
-<p>The game world consists of a hierarchy of three tiers: <strong>Overworld</strong>, <strong>Region</strong> and <strong>Room</strong>. We will create a simple <strong>Region</strong> with two <strong>Rooms</strong>. We can do this directly in the <strong>Main</strong> function for simplicity. To start with lets make the <strong>Rooms</strong>:</p>
-<pre><code class="language-csharp">private static void Main(string[] args)
-{
-    var cavern = new Room(&quot;Cavern&quot;, &quot;A dark cavern set in to the base of the mountain.&quot;, new Exit(Direction.North));
+<p>The game world consists of a hierarchy of three tiers: <strong>Overworld</strong>, <strong>Region</strong> and <strong>Room</strong>. We will create a simple 
+<strong>Region</strong> with two <strong>Rooms</strong>. We can do this directly in the <strong>main</strong> function for simplicity. To start with lets make 
+the <strong>Rooms</strong>:</p>
+<pre><code class="language-kotlin">@JvmStatic
+fun main(args: Array&lt;String&gt;) {
+    val cavern = Room(
+        &quot;Cavern&quot;,
+        &quot;A dark cavern set in to the base of the mountain.&quot;,
+        listOf(
+            Exit(Direction.NORTH),
+        ),
+    )
 
-    var tunnel = new Room(&quot;Tunnel&quot;, &quot;A dark tunnel leading inside the mountain.&quot;, new Exit(Direction.South));
+    val tunnel = Room(
+        &quot;Tunnel&quot;,
+        &quot;A dark tunnel leading inside the mountain.&quot;,
+        listOf(
+            Exit(Direction.SOUTH),
+        ),
+    )
 }
 </code></pre>
-<p>Although the <strong>Rooms</strong> haven't been added to a <strong>Region</strong> yet there are exits in place that will allow the player to move between them.</p>
+<p>Although the <strong>Rooms</strong> haven't been added to a <strong>Region</strong> yet there are exits in place that will allow the player to 
+move between them.</p>
 <p>Games are boring without <strong>Items</strong> to interact with, let's add an item to the tunnel:</p>
-<pre><code class="language-csharp">var holyGrail = new Item(&quot;Holy Grail&quot;, &quot;A dull golden cup, looks pretty old.&quot;, true);
+<pre><code class="language-kotlin">val holyGrail = Item(&quot;Holy Grail&quot;, &quot;A dull golden cup, looks pretty old.&quot;, true)
 
-tunnel.AddItem(holyGrail);
+tunnel.addItem(holyGrail)
 </code></pre>
-<p>Looking good, but the <strong>Rooms</strong> need to be contained within a <strong>Region</strong>. <strong>RegionMaker</strong> simplifies this process, but sometimes creating a <strong>Region</strong> directly may be more appropriate if more control is needed. Here we will use <strong>RegionMaker</strong>:</p>
-<pre><code class="language-csharp">var regionMaker = new RegionMaker(&quot;Mountain&quot;, &quot;An imposing volcano just East of town.&quot;)
-{
-    [0, 0, 0] = cavern,
-    [0, 1, 0] = tunnel
-};
+<p>Looking good, but the <strong>Rooms</strong> need to be contained within a <strong>Region</strong>. <strong>RegionMaker</strong> simplifies this process, 
+but sometimes creating a <strong>Region</strong> directly may be more appropriate if more control is needed. Here we will 
+use <strong>RegionMaker</strong>:</p>
+<pre><code class="language-kotlin">val regionMaker = RegionMaker(&quot;Mountain&quot;, &quot;An imposing volcano just East of town.&quot;).also {
+    it[0, 0, 0] = cavern
+    it[0, 1, 0] = tunnel
+}
 </code></pre>
-<p>This needs more breaking down. The <strong>RegionMaker</strong> will create a region called "Mountain" with a description of "An imposing volcano just East of town.". The region will contain two rooms, the cavern and the tunnel. The cavern will be added at position <em>x</em> 0, <em>y</em> 0, <em>z</em> 0. The tunnel will be added at position <em>x</em> 0, <em>y</em> 1, <em>z</em> 0, north of the cavern.</p>
-<p>The game world is nearly complete, but the <strong>Region</strong> needs to exist within an <strong>Overworld</strong> for it to be finished. We will use <strong>OverworldMaker</strong> to achieve this:</p>
-<pre><code class="language-csharp">var overworldMaker = new OverworldMaker(&quot;Daves World&quot;, &quot;An ancient kingdom.&quot;, regionMaker);
+<p>This needs more breaking down. The <strong>RegionMaker</strong> will create a region called "Mountain" with a description of "An 
+imposing volcano just East of town.". The region will contain two rooms, the cavern and the tunnel. The cavern will be 
+added at position <em>x</em> 0, <em>y</em> 0, <em>z</em> 0. The tunnel will be added at position <em>x</em> 0, <em>y</em> 1, <em>z</em> 0, north of the cavern.</p>
+<p>The game world is nearly complete, but the <strong>Region</strong> needs to exist within an <strong>Overworld</strong> for it to be finished. We 
+will use <strong>OverworldMaker</strong> to achieve this:</p>
+<pre><code class="language-kotlin">val overworldMaker = OverworldMaker(
+    &quot;Daves World&quot;,
+    &quot;An ancient kingdom.&quot;, listOf(
+        regionMaker
+    )
+)
 </code></pre>
-<p>This will create an <strong>Overworld</strong> called "Daves World" which is described as "An ancient kingdom" and contains a single <strong>Region</strong>.</p>
+<p>This will create an <strong>Overworld</strong> called "Daves World" which is described as "An ancient kingdom" and contains a 
+single <strong>Region</strong>.</p>
 <p>All together the code looks like this:</p>
-<pre><code class="language-csharp">var cavern = new Room(&quot;Cavern&quot;, &quot;A dark cavern set in to the base of the mountain.&quot;, new Exit(Direction.North));
+<pre><code class="language-kotlin">val cavern = Room(
+    &quot;Cavern&quot;,
+    &quot;A dark cavern set in to the base of the mountain.&quot;,
+    listOf(
+        Exit(Direction.NORTH),
+    ),
+)
 
-var tunnel = new Room(&quot;Tunnel&quot;, &quot;A dark tunnel leading inside the mountain.&quot;, new Exit(Direction.South));
+val tunnel = Room(
+    &quot;Tunnel&quot;,
+    &quot;A dark tunnel leading inside the mountain.&quot;,
+    listOf(
+        Exit(Direction.SOUTH),
+    ),
+)
 
-var holyGrail = new Item(&quot;Holy Grail&quot;, &quot;A dull golden cup, looks pretty old.&quot;, true);
+val holyGrail = Item(&quot;Holy Grail&quot;, &quot;A dull golden cup, looks pretty old.&quot;, true)
 
-tunnel.AddItem(holyGrail);
+tunnel.addItem(holyGrail)
 
-var regionMaker = new RegionMaker(&quot;Mountain&quot;, &quot;An imposing volcano just East of town.&quot;)
-{
-    [0, 0, 0] = cavern,
-    [0, 1, 0] = tunnel
-};
+val regionMaker = RegionMaker(&quot;Mountain&quot;, &quot;An imposing volcano just East of town.&quot;).also {
+    it[0, 0, 0] = cavern
+    it[0, 1, 0] = tunnel
+}
 
-var overworldMaker = new OverworldMaker(&quot;Daves World&quot;, &quot;An ancient kingdom.&quot;, regionMaker);
+val overworldMaker = OverworldMaker(
+    &quot;Daves World&quot;,
+    &quot;An ancient kingdom.&quot;, listOf(
+        regionMaker
+    )
+)
 </code></pre>
 <h3 id="checking-the-game-is-complete">Checking the game is complete</h3>
 <p>For a game to come to an end it needs to either hit a game over state or a completion state.</p>
-<p>Firstly lets look at the logic that determines if the game is complete. An <strong>EndCheck</strong> is required, which returns an <strong>EndCheckResult</strong> that determines if the game is complete.</p>
-<p>In this example lets make a method that determines if the game is complete. The game is complete if the player has the holy grail:</p>
-<pre><code class="language-csharp">private static EndCheckResult IsGameComplete(Game game)
-{
-    if (!game.Player.FindItem(&quot;Holy Grail&quot;, out _))
-        return EndCheckResult.NotEnded;
+<p>Firstly lets look at the logic that determines if the game is complete. An <strong>EndCheck</strong> is required, which returns an 
+<strong>EndCheckResult</strong> that determines if the game is complete.</p>
+<p>In this example lets make a function that determines if the game is complete. The game is complete if the player has 
+the holy grail:</p>
+<pre><code class="language-kotlin">private fun isGameComplete(game: Game): EndCheckResult {
+    if (game.player.findItem(&quot;Holy Grail&quot;) == null) {
+        return EndCheckResult.notEnded
+    }
 
-    return new EndCheckResult(true, &quot;Game Complete&quot;, &quot;You have the Holy Grail!&quot;);
+    return EndCheckResult(true, &quot;Game Complete&quot;, &quot;You have the Holy Grail!&quot;)
 }
 </code></pre>
-<p>If the player has the holy grail then the <strong>EndCheckResult</strong> will return that the game has ended, and have a title that will read "Game Complete" and a description that reads "You have the Holy Grail!".</p>
+<p>If the player has the holy grail then the <strong>EndCheckResult</strong> will return that the game has ended, and have a title that 
+will read "Game Complete" and a description that reads "You have the Holy Grail!".</p>
 <p>A common game over state may be if the player dies:</p>
-<pre><code class="language-chsarp">private static EndCheckResult IsGameOver(Game game)
-{
-    if (game.Player.IsAlive)
-        return EndCheckResult.NotEnded;
+<pre><code class="language-kotlin">private fun isGameOver(game: Game): EndCheckResult {
+    if (game.player.isAlive) {
+        return EndCheckResult.notEnded
+    }
 
-    return new EndCheckResult(true, &quot;Game Over&quot;, &quot;You died!&quot;);
+    return EndCheckResult(true, &quot;Game Over&quot;, &quot;You died!&quot;)
 }
 </code></pre>
 <h3 id="creating-the-game">Creating the game</h3>
-<p>The game now has all the required assets and logic it just needs some boilerplate to tie everything together before it is ready to play.</p>
-<p>A <strong>GameCreationCallback</strong> is required to instantiate an instance of a <strong>Game</strong>. This is so that new instances of the <strong>Game</strong> can be created as required.</p>
-<pre><code class="language-csharp">var gameCreator = Game.Create(
-    &quot;The Life Of Dave&quot;,
-    &quot;Dave awakes to find himself in a cavern...&quot;,
-    &quot;A very low budget adventure.&quot;,
-    x =&gt; overworldMaker.Make(),
-    CreatePlayer,
-    IsGameComplete,
-    IsGameOver);
-</code></pre>
-<p>This requires some breaking down. The <strong>Game</strong> class has a <strong>Create</strong> method that can be used to create instances of <strong>Game</strong>. This takes the following arguments:
-* <strong>Name</strong> - the name of the game.
-* <strong>Introduction</strong> - an introduction to the game.
-* <strong>Description</strong> - a description of the game.
-* <strong>OverworldGenerator</strong> - a callback for generating instances of the overworld.
-* <strong>PlayerGenerator</strong> - a callback for generating instances of the player.
-* <strong>CompletionCondition</strong> - a callback for determining if the game is complete.
-* <strong>GameOverCondition</strong> - a callback for determining if the game is over.</p>
-<h3 id="executing-the-game">Executing the game</h3>
-<p>The game is executed simply by calling the static <strong>Execute</strong> method on <strong>Game</strong> and passing in the game creation callback.</p>
-<pre><code class="language-csharp">Game.Execute(gameCreator);
-</code></pre>
-<h3 id="bringing-it-all-together">Bringing it all together</h3>
-<p>The full example code should look like this:</p>
-<pre><code class="language-csharp">using BP.AdventureFramework.Assets;
-using BP.AdventureFramework.Assets.Characters;
-using BP.AdventureFramework.Assets.Locations;
-using BP.AdventureFramework.Logic;
-using BP.AdventureFramework.Utilities;
-
-namespace BP.AdventureFramework.GettingStarted
-{
-    internal class Program
-    {
-        private static EndCheckResult IsGameComplete(Game game)
-        {
-            if (!game.Player.FindItem(&quot;Holy Grail&quot;, out _))
-                return EndCheckResult.NotEnded;
-
-            return new EndCheckResult(true, &quot;Game Complete&quot;, &quot;You have the Holy Grail!&quot;);
-        }
-
-        private static EndCheckResult IsGameOver(Game game)
-        {
-            if (game.Player.IsAlive)
-                return EndCheckResult.NotEnded;
-
-            return new EndCheckResult(true, &quot;Game Over&quot;, &quot;You died!&quot;);
-        }
-
-        private static PlayableCharacter CreatePlayer()
-        {
-            return new PlayableCharacter(&quot;Dave&quot;, &quot;A young boy on a quest to find the meaning of life.&quot;);
-        }
-
-        private static void Main(string[] args)
-        {
-            var cavern = new Room(&quot;Cavern&quot;, &quot;A dark cavern set in to the base of the mountain.&quot;, new Exit(Direction.North));
-
-            var tunnel = new Room(&quot;Tunnel&quot;, &quot;A dark tunnel leading inside the mountain.&quot;, new Exit(Direction.South));
-
-            var holyGrail = new Item(&quot;Holy Grail&quot;, &quot;A dull golden cup, looks pretty old.&quot;, true);
-
-            tunnel.AddItem(holyGrail);
-
-            var regionMaker = new RegionMaker(&quot;Mountain&quot;, &quot;An imposing volcano just East of town.&quot;)
-            {
-                [0, 0, 0] = cavern,
-                [0, 1, 0] = tunnel
-            };
-
-            var overworldMaker = new OverworldMaker(&quot;Daves World&quot;, &quot;An ancient kingdom.&quot;, regionMaker);
-
-            var gameCreator = Game.Create(
+<p>The game now has all the required assets and logic it just needs some boilerplate to tie everything together before it 
+is ready to play.</p>
+<p>A <strong>GameCreationCallback</strong> is required to instantiate an instance of a <strong>Game</strong>. This is so that new instances of the 
+<strong>Game</strong> can be created as required.</p>
+<pre><code class="language-kotlin">val gameTemplate = object : GameTemplate() {
+    override fun instantiate(ioConfiguration: IOConfiguration): Game {
+        return Game(
+            GameInformation(
                 &quot;The Life Of Dave&quot;,
                 &quot;Dave awakes to find himself in a cavern...&quot;,
                 &quot;A very low budget adventure.&quot;,
-                x =&gt; overworldMaker.Make(),
-                CreatePlayer,
-                IsGameComplete,
-                IsGameOver);
-
-            Game.Execute(gameCreator);
-        }
+                &quot;Ben Pollard&quot;
+            ),
+            createPlayer(),
+            overworldMaker.make(),
+            { isGameComplete(it) },
+            { isGameOver(it) },
+            ioConfiguration = ioConfiguration
+        )
     }
 }
 </code></pre>
-<p>Simply build and run the application and congratulations, you have a working BP.AdventureFramework game!</p>
+<p>This requires some breaking down. A new subclass of <strong>GameTemplate</strong> is created. A <strong>GameTemplate</strong> is required to 
+execute a game because the <strong>GameExecutor</strong>, the class responsible for executing games may need to instantiate more than 
+one instance of the game. When <strong>instantiate</strong> is called a new instance of <strong>Game</strong> is returned. The constructor for<br />
+<strong>Game</strong> class takes the following arguments:
+<strong>GameInformation</strong> - information abut the game.
+<strong>Player</strong> - the player.
+<strong>Overworld</strong> - the overworld.
+<strong>CompletionCondition</strong> - a callback for determining if the game is complete. Here it is passed a lambda, which in turn passes in the player to the function.
+<strong>GameOverCondition</strong> - a callback for determining if the game is over. Here it is passed a lambda, which in turn passes in the player to the function.
+<strong>IOConfiguration</strong> - a configuration that allows Ktaf to be used with different applications. Here the ioConfiguration which is passed in when the instantiate function is called is used.</p>
+<h3 id="executing-the-game">Executing the game</h3>
+<p>As previously mentioned, the <strong>GameExecutor</strong> is responsible for executing the game. <strong>GameExecutor</strong> can execute games 
+either synchronously or asynchronously. For console applications synchronous execution is appropriate. However, for 
+other types of application asynchronous execution may be required. As this is a console application synchronous execution 
+is most appropriate. The <strong>ExitMode</strong> has been set to <strong>RETURN_TO_TITLE_SCREEN</strong> so that when the game ends, either on 
+completion, game over or when the player chooses to exit the game by tying the <strong>Exit</strong> command, the application will 
+return to the title screen. The <strong>AnsiConsoleConfiguration</strong> is used, this configures the game to be run on an ANSI 
+compatible console. Other configurations can be created to allow Ktaf to function with other types of application, see 
+the examples in the repo for more information.</p>
+<pre><code class="language-kotlin">GameExecutor.execute(
+    gameTemplate,
+    ExitMode.RETURN_TO_TITLE_SCREEN,
+    AnsiConsoleConfiguration
+)
+</code></pre>
+<h3 id="bringing-it-all-together">Bringing it all together</h3>
+<p>The full example code should look like this:</p>
+<pre><code class="language-kotlin">package com.github.benpollarduk.ktaf.gettingstarted
+
+import com.github.benpollarduk.ktaf.assets.Item
+import com.github.benpollarduk.ktaf.assets.characters.PlayableCharacter
+import com.github.benpollarduk.ktaf.assets.locations.Direction
+import com.github.benpollarduk.ktaf.assets.locations.Exit
+import com.github.benpollarduk.ktaf.assets.locations.Room
+import com.github.benpollarduk.ktaf.io.IOConfiguration
+import com.github.benpollarduk.ktaf.io.configurations.AnsiConsoleConfiguration
+import com.github.benpollarduk.ktaf.logic.ExitMode
+import com.github.benpollarduk.ktaf.logic.Game
+import com.github.benpollarduk.ktaf.logic.GameExecutor
+import com.github.benpollarduk.ktaf.logic.GameInformation
+import com.github.benpollarduk.ktaf.logic.conditions.EndCheckResult
+import com.github.benpollarduk.ktaf.utilities.OverworldMaker
+import com.github.benpollarduk.ktaf.utilities.RegionMaker
+import com.github.benpollarduk.ktaf.utilities.templates.GameTemplate
+
+object Main {
+    private fun createPlayer(): PlayableCharacter {
+        return PlayableCharacter(&quot;Dave&quot;, &quot;A young boy on a quest to find the meaning of life.&quot;)
+    }
+
+    private fun isGameComplete(game: Game): EndCheckResult {
+        if (game.player.findItem(&quot;Holy Grail&quot;) == null) {
+            return EndCheckResult.notEnded
+        }
+
+        return EndCheckResult(true, &quot;Game Complete&quot;, &quot;You have the Holy Grail!&quot;)
+    }
+
+    private fun isGameOver(game: Game): EndCheckResult {
+        if (game.player.isAlive) {
+            return EndCheckResult.notEnded
+        }
+
+        return EndCheckResult(true, &quot;Game Over&quot;, &quot;You died!&quot;)
+    }
+
+    @JvmStatic
+    fun main(args: Array&lt;String&gt;) {
+        val cavern = Room(
+            &quot;Cavern&quot;,
+            &quot;A dark cavern set in to the base of the mountain.&quot;,
+            listOf(
+                Exit(Direction.NORTH),
+            ),
+        )
+
+        val tunnel = Room(
+            &quot;Tunnel&quot;,
+            &quot;A dark tunnel leading inside the mountain.&quot;,
+            listOf(
+                Exit(Direction.SOUTH),
+            ),
+        )
+
+        val holyGrail = Item(&quot;Holy Grail&quot;, &quot;A dull golden cup, looks pretty old.&quot;, true)
+
+        tunnel.addItem(holyGrail)
+
+        val regionMaker = RegionMaker(&quot;Mountain&quot;, &quot;An imposing volcano just East of town.&quot;).also {
+            it[0, 0, 0] = cavern
+            it[0, 1, 0] = tunnel
+        }
+
+        val overworldMaker = OverworldMaker(
+            &quot;Daves World&quot;,
+            &quot;An ancient kingdom.&quot;,
+            listOf(
+                regionMaker,
+            ),
+        )
+
+        val gameTemplate = object : GameTemplate() {
+            override fun instantiate(ioConfiguration: IOConfiguration): Game {
+                return Game(
+                    GameInformation(
+                        &quot;The Life Of Dave&quot;,
+                        &quot;Dave awakes to find himself in a cavern...&quot;,
+                        &quot;A very low budget adventure.&quot;,
+                        &quot;Ben Pollard&quot;,
+                    ),
+                    createPlayer(),
+                    overworldMaker.make(),
+                    { isGameComplete(it) },
+                    { isGameOver(it) },
+                    ioConfiguration = AnsiConsoleConfiguration,
+                )
+            }
+        }
+
+        GameExecutor.execute(
+            gameTemplate,
+            ExitMode.RETURN_TO_TITLE_SCREEN,
+            AnsiConsoleConfiguration,
+        )
+    }
+}
+</code></pre>
+<p>Simply build and run the application and congratulations, you have a working Ktaf game!</p>
 
 
 

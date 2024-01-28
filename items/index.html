@@ -20,7 +20,7 @@
     
     
       
-        <title>Items - ktaf</title>
+        <title>Items - Ktaf</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="ktaf" class="md-header__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-header__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ktaf
+            Ktaf
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ktaf" class="md-nav__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-nav__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    ktaf
+    Ktaf
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -605,6 +605,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Api documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -678,39 +698,45 @@
 <p>Items can be used to add interactivity with a game. Items can be something that a player can take with them, or they may be static in a Room.</p>
 <h2 id="use">Use</h2>
 <p>An Item can be simply instantiated with a name and description.</p>
-<pre><code class="language-csharp">var sword = new Item(&quot;Sword&quot;, &quot;A heroes sword.&quot;);
+<pre><code class="language-kotlin">val sword = Item(&quot;Sword&quot;, &quot;A heroes sword.&quot;)
 </code></pre>
 <p>By default, an Item is not takeable and is tied to a Room. If it is takeable this can be specified in the constructor.</p>
-<pre><code class="language-csharp">var sword = new Item(&quot;Sword&quot;, &quot;A heroes sword.&quot;, true);
+<pre><code class="language-kotlin">val sword = Item(&quot;Sword&quot;, &quot;A heroes sword.&quot;, true)
 </code></pre>
-<p>An Item can morph in to another Item. This is useful in situations where the Item changes state. Morphing is invoked with the <strong>Morph</strong> method. The Item that Morph is invoked on takes on the properties of the Item being morphed into.</p>
-<pre><code class="language-csharp">var brokenSword = new Item(&quot;Broken Sword&quot;, &quot;A broken sword&quot;);
-sword.Morph(brokenSword);
+<p>An Item can morph in to another Item. This is useful in situations where the Item changes state. Morphing is invoked 
+with the <strong>morph</strong> function. The Item that morph is invoked on takes on the properties of the Item being morphed into.</p>
+<pre><code class="language-kotlin">val brokenSword = Item(&quot;Broken Sword&quot;, &quot;A broken sword&quot;)
+sword.morph(brokenSword)
 </code></pre>
 <p>Like all Examinable objects, an Item can be assigned custom commands.</p>
-<pre><code class="language-csharp">bomb.Commands =
-[
-    new CustomCommand(new CommandHelp(&quot;Cut wire&quot;, &quot;Cut the red wire.&quot;), true, (game, args) =&gt;
-    {
-        game.Player.Kill();
-        return new Reaction(ReactionResult.Fatal, &quot;Boom!&quot;);
-    })
-];
+<pre><code class="language-kotlin">bomb.commands = listOf(
+    CustomCommand(
+        CommandHelp(&quot;Cut wire&quot;, &quot;Cut the red wire.&quot;),
+        true
+    ) { game, args -&gt;
+        game.player.kill()
+        Reaction(ReactionResult.OK, &quot;Boom!&quot;)
+    }
+)
 </code></pre>
 <h2 id="interaction">Interaction</h2>
-<p>Interactions can be set up between different assets in the game. The <strong>InteractionResult</strong> contains the result of the interaction, and allows the game to react to the interaction.</p>
-<pre><code class="language-csharp">var dartsBoard = new Item(&quot;Darts board&quot;, &quot;A darts board.&quot;);
+<p>Interactions can be set up between different assets in the game. The <strong>InteractionResult</strong> contains the result of the 
+interaction, and allows the game to react to the interaction.</p>
+<pre><code class="language-kotlin">val dartsBoard = Item(&quot;Darts board&quot;, &quot;A darts board.&quot;)
 
-var dart = new Item(&quot;Dart&quot;, &quot;A dart&quot;)
-{
-    Interaction = item =&gt;
-    {
-        if (item == dartsBoard)
-            return new InteractionResult(InteractionEffect.SelfContained, item, &quot;The dart stuck in the darts board.&quot;);
+val dart = Item(&quot;Dart&quot;, &quot;A dart&quot;).apply {
+    interaction = {
+        if (it == dartsBoard) {
+            InteractionResult(
+                InteractionEffect.SELF_CONTAINED,
+                it,
+                &quot;The dart stuck in the darts board.&quot;,
+            )
+        }
 
-        return new InteractionResult(InteractionEffect.NoEffect, item);
+        InteractionResult(InteractionEffect.NO_EFFECT, it)
     }
-};
+}
 </code></pre>
 
 

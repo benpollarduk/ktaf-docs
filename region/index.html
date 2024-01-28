@@ -20,7 +20,7 @@
     
     
       
-        <title>Region - ktaf</title>
+        <title>Region - Ktaf</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="ktaf" class="md-header__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-header__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ktaf
+            Ktaf
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ktaf" class="md-nav__button md-logo" aria-label="ktaf" data-md-component="logo">
+    <a href=".." title="Ktaf" class="md-nav__button md-logo" aria-label="Ktaf" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    ktaf
+    Ktaf
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -607,6 +607,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Api documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -677,7 +697,8 @@
 
 <h1 id="region">Region</h1>
 <h2 id="overview">Overview</h2>
-<p>A Region is the intermediate level location in a game. An Overworld can contain multiple Regions. A Region can contain multiple Rooms.</p>
+<p>A Region is the intermediate level location in a game. An Overworld can contain multiple Regions. A Region can contain 
+multiple Rooms.</p>
 <pre><code>Overworld
 ├── Region
 │   ├── Room
@@ -687,52 +708,54 @@
 │   ├── Room
 │   ├── Room
 </code></pre>
-<p>A Region represents a 3D space. 
-* The <strong>x</strong> location always refers to the horizontal axis, with lower values being west and higher values being east.
-* The <strong>y</strong> location always refers to the vertical axis, with lower values being south and higher values being north.
-* The <strong>z</strong> location always refers to the depth axis, with lower values being down and higher values being up.</p>
+<p>A Region represents a 3D space. </p>
+<p>The <strong>x</strong> location always refers to the horizontal axis, with lower values being west and higher values being east.
+The <strong>y</strong> location always refers to the vertical axis, with lower values being south and higher values being north.
+The <strong>z</strong> location always refers to the depth axis, with lower values being down and higher values being up.</p>
 <h2 id="use">Use</h2>
 <p>A Region can be simply instantiated with a name and description.</p>
-<pre><code class="language-csharp">var region = new Region(&quot;Name&quot;, &quot;Description.&quot;);
+<pre><code class="language-kotlin">val region = Region(&quot;Name&quot;, &quot;Description.&quot;)
 </code></pre>
-<p>Rooms can be added to the Region with the <strong>AddRoom</strong> method. The x, y and z location within the Region must be specified.</p>
-<pre><code class="language-csharp">region.AddRoom(room, 0, 0, 0);
+<p>Rooms can be added to the Region with the <strong>addRoom</strong> function. The x, y and z location within the Region must be 
+specified.</p>
+<pre><code class="language-kotlin">region.addRoom(room, 0, 0, 0)
 </code></pre>
-<p>Rooms can be removed from a Region with the <strong>RemoveRoom</strong> method.</p>
-<pre><code class="language-csharp">region.RemoveRoom(room);
+<p>Rooms can be removed from a Region with the <strong>removeRoom</strong> function.</p>
+<pre><code class="language-kotlin">region.removeRoom(room)
 </code></pre>
-<p>The Region can be traversed with the <strong>Move</strong> method.</p>
-<pre><code class="language-csharp">region.Move(Direction.North);
+<p>The Region can be traversed with the <strong>move</strong> method.</p>
+<pre><code class="language-kotlin">region.move(Direction.NORTH)
 </code></pre>
-<p>The Region can be traversed with the <strong>Move</strong> method.</p>
-<pre><code class="language-csharp">region.Move(Direction.North);
+<p>The start position, that is the position that the Player will start in when entering a Region, can be specified 
+with <strong>setStartPosition</strong>.</p>
+<pre><code class="language-kotlin">region.setStartPosition(0, 0, 0)
 </code></pre>
-<p>The start position, that is the position that the Player will start in when entering a Region, can be specified with <strong>SetStartPosition</strong>.</p>
-<pre><code class="language-csharp">region.SetStartPosition(0, 0, 0);
-</code></pre>
-<p>The <strong>UnlockDoorPair</strong> method can be used to unlock an <strong>Exit</strong> in the current Room, which will also unlock the corresponding Exit in the adjoining <strong>Room</strong>.</p>
-<pre><code class="language-csharp">region.UnlockDoorPair(Direction.East);
+<p>The <strong>unlockDoorPair</strong> function can be used to unlock an <strong>Exit</strong> in the current Room, which will also unlock the 
+corresponding Exit in the adjoining <strong>Room</strong>.</p>
+<pre><code class="language-kotlin">region.unlockDoorPair(Direction.EAST)
 </code></pre>
 <p>Like all Examinable objects, Regions can be assigned custom commands.</p>
-<pre><code class="language-csharp">region.Commands =
-[
-    new CustomCommand(new CommandHelp(&quot;Warp&quot;, &quot;Warp to the start.&quot;), true, (game, args) =&gt;
-    {
-        region.JumpToRoom(0, 0, 0);
-        return new Reaction(ReactionResult.OK, &quot;You warped to the start.&quot;);
-    })
-];
+<pre><code class="language-kotlin">region.commands = listOf(
+    CustomCommand(
+        CommandHelp(&quot;Warp&quot;, &quot;Warp to the start.&quot;),
+        true
+    ) { game, args -&gt;
+        region.jumpToRoom(0, 0, 0)
+        Reaction(ReactionResult.OK, &quot;You warped to the start.&quot;);
+    }
+)
 </code></pre>
 <h2 id="regionmaker">RegionMaker</h2>
-<p>The RegionMaker simplifies the creation of a Region. Rooms are added to the Region with a specified <strong>x</strong>, <strong>y</strong> and <strong>z</strong> position within the Region.</p>
-<pre><code class="language-csharp">var regionMaker = new RegionMaker(&quot;Region&quot;, &quot;Description.&quot;)
-{
-    [0, 0, 0] = new Room(&quot;Room 1&quot;, &quot;Description of room 1.&quot;),
-    [1, 0, 0] = new Room(&quot;Room 2&quot;, &quot;Description of room 2.&quot;),
-};
+<p>The RegionMaker simplifies the creation of a Region. Rooms are added to the Region with a specified <strong>x</strong>, <strong>y</strong> and 
+<strong>z</strong> position within the Region.</p>
+<pre><code class="language-kotlin">val regionMaker = RegionMaker(&quot;Region&quot;, &quot;Description.&quot;).also {
+    it[0, 0, 0] = Room(&quot;Room 1&quot;, &quot;Description of room 1.&quot;)
+    it[1, 0, 0] = Room(&quot;Room 2&quot;, &quot;Description of room 2.&quot;)
+}
 </code></pre>
-<p>The main benefit of using a RegionMaker is that it allows multiple instances of a Region to be created from a single definition of a Region.</p>
-<pre><code class="language-csharp">var region = regionMaker.Make();
+<p>The main benefit of using a RegionMaker is that it allows multiple instances of a Region to be created from a single 
+definition of a Region.</p>
+<pre><code class="language-kotlin">val region = regionMaker.make()
 </code></pre>
 
 
