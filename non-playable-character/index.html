@@ -728,13 +728,13 @@ assets.</p>
         Paragraph(&quot;This is a the first line.&quot;),
         Paragraph(&quot;This is a question.).also {
             it.responses = listOf(
-                Response(&quot;This is the first response., 1),
-                Response(&quot;This is the second response.&quot;, 2),
-                Response(&quot;This is the third response.&quot;, 3)
+                Response(&quot;This is the first response., Jump(1)),
+                Response(&quot;This is the second response.&quot;, Jump(2)),
+                Response(&quot;This is the third response.&quot;, Jump(3))
             )
         },
-        Paragraph(&quot;You picked first response, return to start of conversation.&quot;, -2),
-        Paragraph(&quot;You picked second response, return to start of conversation., -2),
+        Paragraph(&quot;You picked first response, return to start of conversation.&quot;, GoTo(1)),
+        Paragraph(&quot;You picked second response, return to start of conversation., GoTo(1)),
         Paragraph(&quot;This is the third response.&quot;) {
             it.player.kill()
         }
