@@ -574,6 +574,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../attributes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attributes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../frame-builders/" class="md-nav__link">
         
   
@@ -726,19 +746,19 @@ assets.</p>
 <pre><code class="language-kotlin">goblin.conversation = Conversation(
     listOf(
         Paragraph(&quot;This is a the first line.&quot;),
-        Paragraph(&quot;This is a question.).also {
+        Paragraph(&quot;This is a question.&quot;).also {
             it.responses = listOf(
-                Response(&quot;This is the first response., Jump(1)),
+                Response(&quot;This is the first response.&quot;, Jump(1)),
                 Response(&quot;This is the second response.&quot;, Jump(2)),
-                Response(&quot;This is the third response.&quot;, Jump(3))
+                Response(&quot;This is the third response.&quot;, Jump(3)),
             )
         },
         Paragraph(&quot;You picked first response, return to start of conversation.&quot;, GoTo(1)),
-        Paragraph(&quot;You picked second response, return to start of conversation., GoTo(1)),
+        Paragraph(&quot;You picked second response, return to start of conversation.&quot;, GoTo(1)),
         Paragraph(&quot;This is the third response.&quot;) {
             it.player.kill()
-        }
-    )
+        },
+    ),
 )
 </code></pre>
 
